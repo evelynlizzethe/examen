@@ -1,0 +1,30 @@
+// Pregunta 1
+def myMethod(datos: List[Double]): Double = {
+  val logs = datos.map(Math.log)
+  val suma = logs.sum / logs.size
+  Math.sqrt(logs.map(x => math.pow(x - suma, 2)).sum / logs.size)
+}
+ 
+
+
+
+
+
+
+// Pregunta 2
+
+class double
+def listaPrecios = List(
+  producto("Arroz", 2.50),
+  producto("Jamon", 4),
+  producto("Azucar", 3)
+);
+val listaPrecios
+
+
+// Pregunta 3
+
+def generadorIncrementador(incremento: Int): Int => Int = {
+  def incrementar(x: Int): Int = x + incremento
+  incrementar
+}
